@@ -5,6 +5,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.util.Log;
 import android.view.WindowManager;
 
 /**
@@ -30,5 +31,6 @@ public class ForceOfflineReceive extends BroadcastReceiver {
         AlertDialog alertDialog = dialogBuilder.create();
         alertDialog.getWindow().setType(WindowManager.LayoutParams.TYPE_SYSTEM_ALERT);
         alertDialog.show();
+        Log.d("poiu", "broadcast");
     }
 }
